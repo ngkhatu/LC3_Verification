@@ -1,0 +1,9 @@
+In this email, i want to talk a little bit about the coverage plan that you need to come up with on your own after finishing designing your scoreboard. 
+
+As you know, after setting up your verification environment, you need some indicatives whether your verification scheme is "good enough" or how comprehensive your verification process is.
+
+For that purpose, you need to create coverage groups. coverage plan is completely depended on the verification engineer, a good verification engineer will write coverage groups that will cover all possible cases, combinations, special values and sequences of the data that goes to the DUT. 
+
+In that respect, when grading your coverage plan, we will not judge how "big" it is, we will judge how comprehensive it is ( i.e. does it cover all ALU, Memory and control operations. does it cover all the operands that one instruction might take. does it cover the reset behaviour .. etc) 
+
+In this email, i attached a sample of a coverage plan that you might find it useful. please don't confine yourselves to it literally. it is just one approach and you might come up with more comprehensive one. 

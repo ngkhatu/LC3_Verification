@@ -1,0 +1,43 @@
+# //  QuestaSim-64 6.3c Sep 11 2007 Linux 2.6.32-358.18.1.el6.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt LC3_test_top 
+# Loading sv_std.std
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Instruction_sv_unit
+# Loading work.Instruction_sv_unit
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.LC3_test_top
+# Loading work.LC3_test_top
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.LC3_io
+# Loading work.LC3_io
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.dut_Probe_if
+# Loading work.dut_Probe_if
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.testbench
+# Loading work.testbench
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.LC3
+# Loading work.LC3
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Fetch
+# Loading work.Fetch
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Decode
+# Loading work.Decode
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Execute
+# Loading work.Execute
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.ALU
+# Loading work.ALU
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.extension
+# Loading work.extension
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.MemAccess
+# Loading work.MemAccess
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Writeback
+# Loading work.Writeback
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.RegFile
+# Loading work.RegFile
+# Refreshing /afs/unity.ncsu.edu/users/s/sasthan3/Verification/Frame2/mti_lib.Controller_Pipeline
+# Loading work.Controller_Pipeline
+add wave sim:/LC3_test_top/top_io/cb/*

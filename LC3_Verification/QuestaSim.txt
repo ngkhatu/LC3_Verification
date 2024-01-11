@@ -1,0 +1,13 @@
+                       I am attaching some command which will be  used while using the Questasim
+used for the project 
+add questasim63
+rm -rf mti_lib
+vlib mti_lib
+setenv MODELSIM modelsim.ini
+
+vlog *.vp *.v
+
+
+vlog -mfcu -sv -suppress 2217 /// Your data_defs. v and .sv files
+
+vsim -novopt LC3_test_top &        

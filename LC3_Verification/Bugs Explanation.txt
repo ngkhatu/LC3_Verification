@@ -1,0 +1,27 @@
+Along with the clean DUT we have provided you with couple of Buggy DUT files. You can find these files by the name data_defs_fetch.vp data_defs_decode.vp  etc.
+For Checking your Scoreboard against a DUT with bug in the fetch stage you need to rename the file data_defs_fetch.vp to data_defs.vp and compile it the DUT again.
+A correct testebench should be able to find the bugs as explained below in respective buggy files
+Fetch bug: 
+1) When br_taken = 1, pc = taddr-1 instead of taddr.
+
+Decode Bug: 
+1) pcselect1 selects offset9 instead of offset6 for STR instructions
+2) On reset, npc_out = npc_in and IR = dout instead of 0
+
+Execute Bug:
+1)DR asynchronous 
+2)First 7 bits of offset9 = IR[9] instead of IR[8]
+
+Writeback Bug:
+1) address 1 to RegFile msb stuck at 0
+2) DR_in switched for aluout and memout for W_control signal. 
+
+MemAccess Bug:
+1) Instead of all memory signals being high impedance, they take on different values. 
+
+Controller Bug:
+1) if branch not taken, the pc should not be updated but here it is updated to npc+1 instead of npc because enable_updatePC goes high
+
+2) if STR instruction follows LEA with both baseR being dependent and also SR being dependent, then bypass_mem signals go high instead of bypass_alu signals.
+
+3) For Mem_Ctrl_State = 1, next state operations based on checking complete_data = 0 instead of checking if complete_data = 1.
